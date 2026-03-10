@@ -837,7 +837,7 @@ body {
 
 .card-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 30px;
 }
 
@@ -903,6 +903,12 @@ body {
     font-family: var(--font-body);
     font-size: 13px;
     color: var(--color-text);
+}
+
+@media (max-width: 1024px) {
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px) {
